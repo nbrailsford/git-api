@@ -19,11 +19,9 @@ function displayRipo(responseJson) {
 }
 
 function watchForm() {
-  input = $("#user").val();
   $(".submit").click(event => {
-    console.log(input);
+    input = $("#user").val();
     event.preventDefault();
-    console.log(input);
     getRepo();
   });
 }
